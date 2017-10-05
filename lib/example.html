@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> example file </title>
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+
+			body {
+				background: #eeeeee;
+				font-family: 'Roboto Condensed', sans-serif;
+			}
+
+			.content {
+				overflow: hidden;
+				position: fixed;
+
+				width: 600px;
+				height: 400px;
+
+				top: 50%;
+				left: 50%;
+				margin-top: -200px;
+				margin-left: -300px;
+
+				box-shadow: 0px 20px 100px rgba(0,0,0,0.5);
+				border-radius: 8px;
+			}
+
+			.content:after {
+				content: "";
+				position: absolute;
+				z-index: 3;
+
+				width: 100%;
+				height: 100%;
+
+				top: 0px;
+				left: 0px;
+
+				background: linear-gradient(transparent, rgba(0,0,0,0.8));
+			}
+
+			.content img {
+				width: 100%;
+				height: 100%;
+			}
+
+			.content h1 {
+				position: absolute;
+				z-index: 4;
+
+				width: 100%;
+
+				bottom: 80px;
+				left: 0px;
+
+				text-align: center;
+				color: #ffffff;
+				font-size: 60px;
+			}
+
+			.content p {
+				position: absolute;
+				z-index: 4;
+
+				width: 100%;
+
+				bottom: 60px;
+				left: 0px;
+
+				text-align: center;
+				color: #ffffff;
+				font-size: 15px;
+				letter-spacing: 5px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="content">
+			<img src="https://source.unsplash.com/collection/190727/600x400" alt="unsplash image" />
+			<h1>LOREM IPSUM</h1>
+			<p>LOREM IPSUM DOLOR SIT AMET</p>
+		</div>
+
+		<script src="./over.min.js"></script>
+		<script>
+			// init of over.js
+		</script>
+	</body>
+</html>
