@@ -43,12 +43,23 @@
 				top: 0px;
 				left: 0px;
 
-				background: linear-gradient(transparent, rgba(0,0,0,0.8));
+				background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+				opacity: .8;
+				transition: all .33s ease;
+			}
+
+			.content:hover:after {
+				opacity: 1;
 			}
 
 			.content img {
 				width: 100%;
 				height: 100%;
+				transition: all .33s ease;
+			}
+
+			.content:hover img {
+				transform: scale(1.1);
 			}
 
 			.content h1 {
@@ -79,20 +90,36 @@
 				font-size: 15px;
 				letter-spacing: 5px;
 			}
+
+			/* default styles */
+			.overjs__cursor {
+					width: 14px; /* 10px width + (2 * 2px radius) */
+					height: 14px; /* same as width */
+			}
+
+			.circle-cursor {
+				width: 10px;
+				height: 10px;
+
+				border: 2px solid #fff;
+				border-radius: 10px;
+			}
 		</style>
 	</head>
 
 	<body>
 		<div class="content">
 			<img src="https://source.unsplash.com/collection/190727/600x400" alt="unsplash image" />
-			<h1>LOREM IPSUM</h1>
-			<p>LOREM IPSUM DOLOR SIT AMET</p>
+			<h1 class="ignore-me">LOREM IPSUM</h1>
+			<p class="also-me-please">LOREM IPSUM DOLOR SIT AMET</p>
 		</div>
 
 		<script src="./over.min.js"></script>
 		<script>
 			// example usage
-			var example = document.querySelector('.content').overjs();
+			var example = document.querySelector('.content').over({
+				ignore: [document.querySelector('.ignore-me'), document.querySelector('.also-me-please')]
+			});
 		</script>
 	</body>
 </html>
