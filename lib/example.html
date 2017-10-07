@@ -106,18 +106,7 @@
 		<script src="./over.min.js"></script>
 		<script>
 			// example usage
-			var example = document.querySelector('.content').over({
-				onEnter: function(self, e) {
-					console.log('in');
-				},
-				onOut: function(self, e) {
-					console.log('out');
-				},
-				onIgnored: function(self, target, e) {
-					console.log('ignored');
-				},
-				ignore: [document.querySelector('.ignore-me')]
-			});
+			var example = document.querySelector('.content').over();
 		</script>
 	</body>
 </html>

@@ -1,1 +1,1 @@
-.overjs__cursor{width:16px;height:16px}.overjs__cursor-default{border-radius:50%;overflow:hidden}.overjs__cursor-default .circle-cursor{width:10px;height:10px;border:3px solid rgba(255,255,255,0.7);border-radius:10px}
+.overjs__cursor-default .circle-cursor{width:10px;height:10px;border:3px solid rgba(255,255,255,0.7);border-radius:10px;transform-origin:50% 50%;transition:transform .3s ease}.overjs__cursor-moving .circle-cursor{transform:scale(2)}
