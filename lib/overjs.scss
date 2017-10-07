@@ -1,0 +1,22 @@
+// overjs.scss
+.overjs {
+	&__cursor {
+		width: 16px;
+		height: 16px;
+
+		// defualt cursors
+		&-default {
+			border-radius: 50%;
+			overflow: hidden;
+
+			// cursor styles
+			.circle-cursor {
+				width: 10px;
+				height: 10px;
+
+				border: 3px solid rgba(255,255,255,0.7);
+				border-radius: 10px;
+			}
+		}
+	}
+}
