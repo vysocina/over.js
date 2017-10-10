@@ -66,6 +66,6 @@ document.querySelector('.test').over({
     rightClickPreventDefault: false
 })
 ```
-* `boolean`, default value: `true`
+* `boolean`, default value: `false`
 
 ***
