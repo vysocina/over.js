@@ -106,25 +106,7 @@
 		<script src="./over.js"></script>
 		<script>
 			// example usage
-			var example = document.querySelector('.content').over({
-				onMouseDown: function() {
-					console.log("Left Down");
-				},
-				onMouseUp: function() {
-					console.log("Left Up");
-				},
-				onClick: function() {
-					console.log("Left Click");
-				},
-
-				contextMenuPreventDefault: true,
-				onRightClickDown: function() {
-					console.log("Right Down");
-				},
-				onRightClickUp: function() {
-					console.log("Right Up");
-				}
-			});
+			var example = document.querySelector('.content').over();
 		</script>
 	</body>
 </html>
