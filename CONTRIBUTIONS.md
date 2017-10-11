@@ -56,7 +56,7 @@ document.querySelector('.test').over({
 	}
 })
 ```
-* `boolean`, default value: `function() {}`
+* `function`, default value: `function() {}`
 
 ### contextMenuPreventDefault || rightClickPreventDefault
 * [github](http://github.com/meldiron)
@@ -67,5 +67,65 @@ document.querySelector('.test').over({
 })
 ```
 * `boolean`, default value: `false`
+
+### onClick
+* [github](http://github.com/meldiron)
+* event which execute callback when user clicks target
+```
+document.querySelector('.test').over({
+    onClick: function(self, event) {
+		console.log("Clicked!");
+	}
+})
+```
+* `function`, default value: `function() {}`
+
+### onMouseDown
+* [github](http://github.com/meldiron)
+* event which execute callback when user start holding left button
+```
+document.querySelector('.test').over({
+    onMouseDown: function(self, event) {
+		console.log("User started holding left button!");
+	}
+})
+```
+* `function`, default value: `function() {}`
+
+### onMouseUp
+* [github](http://github.com/meldiron)
+* event which execute callback when user release left button
+```
+document.querySelector('.test').over({
+    onMouseUp: function(self, event) {
+		console.log("User released left button!");
+	}
+})
+```
+* `function`, default value: `function() {}`
+
+### onRightClickDown
+* [github](http://github.com/meldiron)
+* event which execute callback when user start holding right button
+```
+document.querySelector('.test').over({
+    onRightClickDown: function(self, event) {
+		console.log("User started holding right button!");
+	}
+})
+```
+* `function`, default value: `function() {}`
+
+### onRightClickUp
+* [github](http://github.com/meldiron)
+* event which execute callback when user release right button
+```
+document.querySelector('.test').over({
+    onRightClickUp: function(self, event) {
+		console.log("User released right button!");
+	}
+})
+```
+* `function`, default value: `function() {}`
 
 ***
