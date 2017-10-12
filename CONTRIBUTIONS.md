@@ -128,4 +128,60 @@ document.querySelector('.test').over({
 ```
 * `function`, default value: `function() {}`
 
+### onDrag
+* [github](http://github.com/meldiron)
+* event which execute callback when user move with mouse while holding left button
+```
+document.querySelector('.test').over({
+    onDrag: function(info, self, event) {
+		//info:
+		/*
+			{
+				position: {
+					x: e.pageX,
+					y: e.pageY
+				},
+				difference: {
+					x: e.movementX,
+					y: e.movementY
+				},
+				relativePosition: {
+					x: e.layerX,
+					y: e.layerY
+				}
+			}
+		*/
+	}
+})
+```
+* `function`, default value: `function() {}`
+
+### onRightDrag
+* [github](http://github.com/meldiron)
+* event which execute callback when user move with mouse while holding right button
+```
+document.querySelector('.test').over({
+    onRightDrag: function(info, self, event) {
+		//info:
+		/*
+			{
+				position: {
+					x: e.pageX,
+					y: e.pageY
+				},
+				difference: {
+					x: e.movementX,
+					y: e.movementY
+				},
+				relativePosition: {
+					x: e.layerX,
+					y: e.layerY
+				}
+			}
+		*/
+	}
+})
+```
+* `function`, default value: `function() {}`
+
 ***
